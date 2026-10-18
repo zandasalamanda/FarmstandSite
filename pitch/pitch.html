@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Farmstand — Website Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --milk:#FBF9F4; --parchment:#F5EFE3; --ink:#232A2D; --muted:#5E686D;
+    --sign-blue-ink:#39596A; --line:#E3DCCC;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  @page{size:letter;margin:0;}
+  body{font-family:'Karla',sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+
+  .page{
+    width:816px;height:1056px;position:relative;overflow:hidden;
+    page-break-after:always;padding:60px 58px;background:var(--milk);
+  }
+  .page:last-child{page-break-after:auto;}
+
+  .page h2{
+    font-family:'Cormorant Garamond',serif;font-weight:600;font-size:28px;margin-bottom:16px;
+  }
+  ul.notes{margin-top:16px;padding-left:18px;max-width:540px;}
+  ul.notes li{font-size:13.5px;line-height:1.7;color:#3A4347;}
+
+  .shot{
+    width:700px;margin:0 auto;overflow:hidden;position:relative;
+    border:1px solid var(--line);background:#fff;
+  }
+  .shot img{width:700px;display:block;position:relative;}
+
+  /* Cover */
+  .cover{background:var(--parchment);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+  .cover img.logo{width:320px;mix-blend-mode:multiply;margin-bottom:40px;}
+  .cover h1{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:42px;}
+  .cover .sub{font-size:15px;color:var(--muted);margin-top:14px;line-height:1.8;}
+  .woodband{
+    position:absolute;bottom:0;left:0;right:0;height:52px;
+    background:url('../images/woodgrain.png'), linear-gradient(180deg,#628697,#54798A);
+    background-size:1600px 200px, auto;
+    display:flex;align-items:center;justify-content:center;
+    color:#F6F4EC;font-size:11.5px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;
+  }
+
+  /* Mobile page */
+  .phones{display:flex;gap:36px;justify-content:center;align-items:flex-start;margin-top:10px;}
+  .phone{text-align:center;}
+  .phone .frame{width:209px;border:2px solid #D8D2C6;border-radius:22px;overflow:hidden;background:#fff;position:relative;}
+  .phone .frame img{width:205px;display:block;position:relative;}
+  .phone .lbl{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:12px;}
+
+  /* Last page */
+  .next{background:var(--parchment);}
+  .next p{font-size:15px;line-height:1.8;max-width:540px;margin-bottom:22px;}
+  .contact{
+    background:#fff;border:1px solid var(--line);border-left:4px solid #5A7E8C;
+    padding:26px 30px;max-width:540px;margin-top:10px;
+  }
+  .contact .email{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:28px;margin-bottom:6px;}
+  .contact .site{font-size:14px;color:var(--muted);}
+  .contact .site strong{color:var(--ink);}
+</style>
+</head>
+<body>
+
+<!-- 1 · Cover -->
+<section class="page cover">
+  <img class="logo" src="../images/logo.png" alt="The Farm Stand logo">
+  <h1>Website Concept</h1>
+  <p class="sub">Prepared for The Farmstand<br>Boonton Township, NJ · August 2026</p>
+  <p class="sub" style="margin-top:44px">Zander Leon<br>zanderleon.dev · zander.leon@gmail.com · 862-274-1042</p>
+  <div class="woodband">591 Powerville Rd · Boonton Township · Est. 1920s</div>
+</section>
+
+<!-- 2 · Homepage -->
+<section class="page">
+  <h2>Homepage</h2>
+  <div class="shot" style="height:437px"><img src="desktop.png" style="top:0"></div>
+  <ul class="notes">
+    <li>Your sign, your colors, and the string lights</li>
+    <li>Menu, directions, and hours right up front</li>
+    <li>Your 5.0 Google rating on the first screen</li>
+  </ul>
+</section>
+
+<!-- 3 · Menu -->
+<section class="page">
+  <h2>Menu</h2>
+  <div class="shot" style="height:569px"><img src="desktop.png" style="top:-437px"></div>
+  <ul class="notes">
+    <li>Styled like your chalkboards at the window</li>
+    <li>Items and prices are easy to update</li>
+    <li>Prices shown are placeholders, quick to correct</li>
+  </ul>
+</section>
+
+<!-- 4 · Story -->
+<section class="page">
+  <h2>Our Story</h2>
+  <div class="shot" style="height:406px"><img src="desktop.png" style="top:-1006px"></div>
+  <ul class="notes">
+    <li>Your logo and the Oscar Kincaid history</li>
+    <li>Timeline from the 1920s to the 2026 reopening</li>
+  </ul>
+</section>
+
+<!-- 5 · Reviews -->
+<section class="page">
+  <h2>Reviews</h2>
+  <div class="shot" style="height:745px"><img src="desktop.png" style="top:-1412px"></div>
+  <ul class="notes">
+    <li>Real quotes from your Google reviews, word for word</li>
+    <li>Photos from opening weekend</li>
+  </ul>
+</section>
+
+<!-- 6 · Visit -->
+<section class="page">
+  <h2>Visit</h2>
+  <div class="shot" style="height:802px"><img src="desktop.png" style="top:-2158px"></div>
+</section>
+
+<!-- 7 · Mobile -->
+<section class="page">
+  <h2>On a Phone</h2>
+  <div class="phones">
+    <div class="phone">
+      <div class="frame" style="height:444px"><img src="m-home.png" style="top:0"></div>
+      <div class="lbl">Home</div>
+    </div>
+    <div class="phone">
+      <div class="frame" style="height:444px"><img src="m-menu.png" style="top:0"></div>
+      <div class="lbl">The menu</div>
+    </div>
+    <div class="phone">
+      <div class="frame" style="height:444px"><img src="m-visit.png" style="top:0"></div>
+      <div class="lbl">Hours &amp; directions</div>
+    </div>
+  </div>
+  <ul class="notes" style="margin-top:26px">
+    <li>Designed for phones first</li>
+    <li>One tap to call, one tap for directions</li>
+  </ul>
+</section>
+
+<!-- 8 · Contact -->
+<section class="page next">
+  <h2>Next Steps</h2>
+  <p>This is a working website, built from your real menu, story, and reviews. I would love to walk you through it on a quick call and hear what you think.</p>
+  <div class="contact">
+    <div class="email">zander.leon@gmail.com</div>
+    <div class="email" style="font-size:24px">862-274-1042</div>
+    <div class="site">More of my work: <strong>zanderleon.dev</strong></div>
+  </div>
+</section>
+
+</body>
+</html>
